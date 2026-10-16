@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080b1b">
+  <meta name="description" content="Promo 5B: recuerdos, videos y momentos que nos hacen únicos.">
+  <title>Promo 5B — Un recuerdo para siempre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="petal-field" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Promo 5B, inicio"><span class="brand-mark">5B</span><span>promo<span class="brand-dot">.</span></span></a>
+    <a class="header-link" href="#recuerdos">Nuestros recuerdos <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> UNA PROMO · MIL RECUERDOS</p>
+        <h1>¡Te presentamos<br>la <em>Promo XX de 5.º B</em>!</h1>
+        <p class="hero-description">Hola, te presentamos la Promo XX de 5.º B. Este será nuestro rincón para compartir los videos y las fotos más importantes de la promo. ¡Esperamos que te guste! Déjanos un mensaje al final. ♡</p>
+        <div class="hero-actions">
+          <a class="button button-secondary" href="https://www.tiktok.com/@promo20.1" target="_blank" rel="noopener noreferrer" aria-label="Visitar TikTok de Promo 5B">TikTok de la promo ↗</a>
+          <a class="button button-primary" href="#recuerdos">Ver nuestros momentos <span>↓</span></a>
+          <a class="text-link" href="#mensaje">Dejar un mensaje <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-sparkle">✳</span> Hecho con cariño por 5.º B</div>
+      </div>
+      <div class="hero-art reveal reveal-delay" aria-label="Ilustración floral rosa decorativa">
+        <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+        <div class="art-card">
+          <div class="art-topline"><span>GENERACIÓN 5B</span><span>✳ 2026</span></div>
+          <div class="flower flower-large">✿</div>
+          <div class="art-title">los días<br>que <em>brillan</em></div>
+          <div class="art-bottom"><span>JUNTOS EN ESTA HISTORIA</span><span>♡</span></div>
+        </div>
+        <span class="floating flower-small">✿</span><span class="floating tiny-star">✧</span><span class="floating floating-heart">♡</span>
+      </div>
+      <div class="scroll-cue"><span></span> DESLIZA PARA DESCUBRIR</div>
+    </section>
+
+    <section class="intro-strip">
+      <p>UN GRUPO · MUCHAS HISTORIAS · RECUERDOS PARA SIEMPRE</p>
+      <span aria-hidden="true">✳</span>
+    </section>
+
+    <section class="memories section-shell" id="recuerdos">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> NUESTRA HISTORIA</p>
+        <h2>Pequeños instantes,<br><em>grandes recuerdos.</em></h2>
+        <p class="section-subtitle">Cada foto guarda una historia. Cada video, una risa que queremos repetir.</p>
+      </div>
+      <div class="gallery-grid" id="gallery" aria-live="polite">
+        <article class="gallery-placeholder placeholder-feature"><span class="placeholder-icon">✿</span><span class="placeholder-label">NUESTROS MOMENTOS</span><p>Las fotos más bonitas<br>están por llegar.</p></article>
+        <article class="gallery-placeholder placeholder-tall"><span class="placeholder-icon">♡</span><span class="placeholder-label">RISAS Y AVENTURAS</span><p>Un recuerdo<br>a la vez.</p></article>
+        <article class="gallery-placeholder placeholder-wide"><span class="placeholder-icon">✧</span><span class="placeholder-label">PROMO 5B</span><p>Este espacio se llenará de historias.</p></article>
+      </div>
+      <p class="gallery-footnote">Las fotos y videos se añadirán cuando conectemos el panel de administración.</p>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-flower" aria-hidden="true">✿</div>
+      <p class="quote-mark">“</p>
+      <blockquote>No recordaremos cada día,<br>pero sí cómo nos hizo sentir.</blockquote>
+      <p class="quote-caption">CON CARIÑO, PROMO 5B</p>
+    </section>
+
+    <section class="message-section section-shell" id="mensaje">
+      <div class="message-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> TU HUELLA EN NUESTRA HISTORIA</p>
+        <h2>Déjanos<br><em>un mensaje.</em></h2>
+        <p>Una palabra bonita también puede convertirse en un gran recuerdo. Nos encantará leerte.</p>
+        <div class="message-decoration">con cariño, <span>5B ♡</span></div>
+      </div>
+      <form class="message-form reveal reveal-delay" id="message-form">
+        <label for="message">Tu mensaje</label>
+        <textarea id="message" name="message" maxlength="50" rows="3" placeholder="Escribe algo bonito…" required></textarea>
+        <div class="form-meta"><span id="char-count">0 / 50 caracteres</span><span>Máximo 50</span></div>
+        <button class="button button-primary submit-button" type="submit">Enviar mensaje <span>↗</span></button>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        <p class="privacy-note"><span>♡</span> El envío de mensajes necesita conectar un servicio de almacenamiento.</p>
+      <p class="message-note">Por ahora, el formulario es solo visual: GitHub Pages no guarda mensajes por sí solo.</p></form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">5B</span><span>promo<span class="brand-dot">.</span></span></a>
+    <p>Una promo, mil recuerdos. <span>Hecho con ♡</span></p>
+    <a class="back-top" href="#inicio">Volver arriba ↑</a>
+  </footer>
+</body>
+</html>
